@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Beanzy Wrapped — our month</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Kalam:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="story-progress" id="storyProgress" role="progressbar" aria-label="Album progress"></div>
+
+  <div class="nav-controls">
+    <button class="nav-btn nav-btn--prev" id="navPrev" aria-label="Previous">
+      <span aria-hidden="true">&larr;</span> back
+    </button>
+    <button class="nav-btn nav-btn--next" id="navNext" aria-label="Next">
+      next <span aria-hidden="true">&rarr;</span>
+    </button>
+  </div>
+
+  <main class="screens" id="screens">
+
+    <section class="screen screen--intro" data-screen="0" aria-label="Intro">
+      <div class="paper-texture"></div>
+      <div class="washi-tape washi-tape--top-left"></div>
+      <div class="washi-tape washi-tape--top-right"></div>
+
+      <div class="intro-content">
+        <img
+          class="intro-headline"
+          src="assets/hero/happy-birthday.jpg"
+          alt="Happy Birthday, magazine cutout letters"
+          width="736"
+          height="490"
+          fetchpriority="high"
+        />
+
+        <div class="polaroid polaroid--hero" style="--rot: -3deg;">
+          <img
+            src="assets/hero/roblox-hand-holding.jpg"
+            alt="Roblox-style crayon drawing of Lorean and Beanzy holding hands"
+            width="736"
+            height="736"
+            fetchpriority="high"
+          />
+          <p class="polaroid-caption">us :)</p>
+        </div>
+
+        <p class="handwritten-note intro-note">
+          my gift, for you, with lots of love
+        </p>
+
+        <button class="btn-primary" id="startBtn">continue</button>
+
+        <p class="signature signature--intro">The Great Lorean</p>
+      </div>
+    </section>
+
+    <section class="screen screen--counter" data-screen="1" aria-label="Days together counter">
+      <div class="paper-texture"></div>
+
+      <div class="counter-content">
+        <p class="handwritten-note counter-label">we've been together for...</p>
+        <p class="counter-number" id="dayCounter" aria-live="polite">0</p>
+        <p class="counter-sublabel">days <span class="counter-sublabel-aside">(I think)</span></p>
+        <p class="handwritten-note counter-note">
+          and counting, Beanzy
+        </p>
+
+        <div class="counter-evidence">
+          <div class="polaroid polaroid--grid" style="--rot: -6deg;">
+            <img
+              src="assets/photos/photo-01.png"
+              alt="PLACEHOLDER: month evidence photo 1"
+              loading="lazy"
+              width="500"
+              height="500"
+              onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+            />
+            <p class="polaroid-caption">the fan I love most</p>
+          </div>
+
+          <div class="polaroid polaroid--grid" style="--rot: 5deg;">
+            <img
+              src="assets/photos/photo-02.png"
+              alt="PLACEHOLDER: month evidence photo 2"
+              loading="lazy"
+              width="500"
+              height="500"
+              onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+            />
+            <p class="polaroid-caption">me, who else</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="doodle doodle--heart doodle--1">♥</div>
+      <div class="doodle doodle--arrow doodle--1">↝</div>
+    </section>
+
+    <section class="screen screen--dogwalk" data-screen="2" aria-label="Dog walk, top activity of the month">
+      <div class="paper-texture"></div>
+
+      <p class="eyebrow-label">your favorite activity with me</p>
+      <h2 class="screen-title">Dog Walk 🐾</h2>
+
+      <div class="dogwalk-grid">
+        <div class="polaroid polaroid--grid" style="--rot: -5deg;">
+          <img
+            src="assets/dogwalk/dogwalk-01.png"
+            alt="PLACEHOLDER: dog walk screenshot 1"
+            loading="lazy"
+            width="500"
+            height="500"
+            onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+          />
+          <p class="polaroid-caption">our first day on that game</p>
+        </div>
+
+        <div class="polaroid polaroid--grid" style="--rot: 4deg;">
+          <img
+            src="assets/dogwalk/dogwalk-02.png"
+            alt="PLACEHOLDER: dog walk screenshot 2"
+            loading="lazy"
+            width="500"
+            height="500"
+            onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+          />
+          <p class="polaroid-caption">you being stinky as always</p>
+        </div>
+
+        <div class="polaroid polaroid--grid" style="--rot: -3deg;">
+          <img
+            src="assets/dogwalk/dogwalk-03.png"
+            alt="PLACEHOLDER: dog walk screenshot 3"
+            loading="lazy"
+            width="500"
+            height="500"
+            onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+          />
+          <p class="polaroid-caption">my favorite photo from that game</p>
+        </div>
+
+        <div class="polaroid polaroid--grid" style="--rot: 6deg;">
+          <img
+            src="assets/dogwalk/dogwalk-04.png"
+            alt="PLACEHOLDER: dog walk screenshot 4"
+            loading="lazy"
+            width="500"
+            height="500"
+            onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+          />
+          <p class="polaroid-caption">I don't want to talk about this one</p>
+        </div>
+      </div>
+
+      <p class="handwritten-note dogwalk-note">
+        I don't know why, I just know you love it.
+      </p>
+
+      <div class="doodle doodle--paw">🐾</div>
+    </section>
+
+    <section class="screen screen--vibe" data-screen="3" aria-label="Vibe of the month">
+      <div class="paper-texture"></div>
+      <div class="washi-tape washi-tape--vibe-1"></div>
+      <div class="washi-tape washi-tape--vibe-2"></div>
+
+      <p class="eyebrow-label">my favorite activity with you</p>
+      <h2 class="screen-title screen-title--green">Match outfits</h2>
+
+      <div class="vibe-collage">
+        <div class="polaroid polaroid--grid" style="--rot: -7deg;">
+          <img
+            src="assets/photos/photo-03.png"
+            alt="PLACEHOLDER: green vibe photo 1"
+            loading="lazy"
+            width="500"
+            height="500"
+            onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+          />
+          <p class="polaroid-caption">I like this outfit</p>
+        </div>
+
+        <div class="polaroid polaroid--grid" style="--rot: 3deg;">
+          <img
+            src="assets/photos/photo-04.png"
+            alt="PLACEHOLDER: green vibe photo 2"
+            loading="lazy"
+            width="500"
+            height="500"
+            onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+          />
+          <p class="polaroid-caption">this one too</p>
+        </div>
+
+        <div class="polaroid polaroid--grid" style="--rot: -2deg;">
+          <img
+            src="assets/photos/photo-05.png"
+            alt="PLACEHOLDER: green vibe photo 3"
+            loading="lazy"
+            width="500"
+            height="500"
+            onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+          />
+          <p class="polaroid-caption">but this one, I love it, it's my favorite</p>
+        </div>
+      </div>
+
+      <p class="handwritten-note vibe-note">
+        I love that we share something, I love that it's with you.
+      </p>
+
+      <div class="doodle doodle--heart doodle--vibe-1">♥</div>
+      <div class="doodle doodle--heart doodle--vibe-2">♥</div>
+      <div class="doodle doodle--underline"></div>
+    </section>
+
+    <section class="screen screen--letter" data-screen="4" aria-label="Closing letter">
+      <div class="paper-texture"></div>
+
+      <div class="letter-card">
+        <p class="eyebrow-label">for my favorite bacon</p>
+        <div class="letter-body handwritten-note">
+          Beanzy,<br /><br />
+          I hope you're enjoying my company as much as I enjoy yours,
+          it makes me so happy to be with you on a day like this, and honestly,
+          I hope we get to spend many more birthdays together, I love you so much,
+          I hope you like what I made just as much as you like me, ofc.<br /><br />
+          (On your next birthday I'll give you a letter, but in person)<br /><br />
+          with all my love,
+        </div>
+        <p class="signature signature--letter">The Great Lorean</p>
+      </div>
+
+      <div class="final-collage">
+        <div class="polaroid polaroid--grid polaroid--small" style="--rot: -5deg;">
+          <img
+            src="assets/photos/photo-06.png"
+            alt="PLACEHOLDER: final photo 1"
+            loading="lazy"
+            width="400"
+            height="400"
+            onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+          />
+        </div>
+        <div class="polaroid polaroid--grid polaroid--small" style="--rot: 4deg;">
+          <img
+            src="assets/photos/photo-07.png"
+            alt="PLACEHOLDER: final photo 2"
+            loading="lazy"
+            width="400"
+            height="400"
+            onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+          />
+        </div>
+        <div class="polaroid polaroid--grid polaroid--small" style="--rot: -3deg;">
+          <img
+            src="assets/photos/photo-08.png"
+            alt="PLACEHOLDER: final photo 3"
+            loading="lazy"
+            width="400"
+            height="400"
+            onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+          />
+        </div>
+        <div class="polaroid polaroid--grid polaroid--small" style="--rot: 6deg;">
+          <img
+            src="assets/photos/photo-09.png"
+            alt="PLACEHOLDER: final photo 4"
+            loading="lazy"
+            width="400"
+            height="400"
+            onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+          />
+        </div>
+        <div class="polaroid polaroid--grid polaroid--small" style="--rot: -6deg;">
+          <img
+            src="assets/photos/photo-10.png"
+            alt="PLACEHOLDER: final photo 5"
+            loading="lazy"
+            width="400"
+            height="400"
+            onerror="this.closest('.polaroid').classList.add('polaroid--empty')"
+          />
+        </div>
+      </div>
+
+      <div class="doodle doodle--final-heart">♥</div>
+      <p class="handwritten-note the-end-note">Some of my favorite photos of us, the last one is the best, because it's the one where you started to stop being so difficult with me :)</p>
+    </section>
+
+  </main>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">&times;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
